@@ -15,7 +15,6 @@ ready(function (){
 		
 		var clientHeight=document.documentElement.clientHeight;
 		oTwo.style.height=clientHeight+'px';
-		oTwo.style.top=clientHeight+'px';
 		
 		//滚动距离
 		var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
