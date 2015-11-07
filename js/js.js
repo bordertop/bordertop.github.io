@@ -11,7 +11,11 @@ ready(function (){
 	var oWork=document.getElementById('work')
 	
 	//  屏幕滚动
-	window.onscroll=function (){
+	window.onscroll=window.onresize=function (){
+		
+		var clientHeight=document.documentElement.clientHeight;
+		oTwo.style.height=clientHeight+'px';
+		oTwo.style.top=clientHeight+'px';
 		
 		//滚动距离
 		var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
@@ -24,7 +28,7 @@ ready(function (){
 		}
 		else if(scrollTop<350 || scrollTop>1900)
 		{
-			oTwo.style.top='-650px';
+			oTwo.style.top='-'+clientHeight+'px';
 		}
 		
 		
