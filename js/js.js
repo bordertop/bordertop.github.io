@@ -30,7 +30,7 @@ ready(function (){
 			oTwo.style.top=(-clientHeight)+'px';
 		}
 		
-		
+		oWork.style.top=(300-scrollTop)+'px';
 		document.onmousewheel=function (ev)
 		{
 			oEvent=ev || event;	
@@ -43,8 +43,6 @@ ready(function (){
 			{
 				oWork.style.top=(300-scrollTop)+'px';
 			}
-			
-			
 		};
 		
 	};
