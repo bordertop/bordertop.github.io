@@ -28,7 +28,7 @@ ready(function (){
 		}
 		else if(scrollTop<350 || scrollTop>1900)
 		{
-			oTwo.style.top='-'+clientHeight+'px';
+			oTwo.style.top=(-clientHeight)+'px';
 		}
 		
 		
